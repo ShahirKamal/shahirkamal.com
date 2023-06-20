@@ -1,0 +1,156 @@
+<!
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src="../JQ,%20BT,%20JS/jquery.js.download"></script>
+    <script src="../JQ,%20BT,%20JS/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../JQ,%20BT,%20JS/css/bootstrap.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+
+
+    <title>login</title>
+
+    <style>
+        body {
+            background-image: url("everything/loging.jpg");
+            background-size: cover;
+        }
+
+        #background {
+            background: rgba(28, 57, 149, 0.5);
+            margin-top: 50px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            border-radius: 20px;
+        }
+
+        .input-group {
+            margin-left: 50px;
+            margin-top: 20px;
+
+        }
+
+        i {
+            color: white;
+            font-size: 25px;
+            background: black;
+            padding:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+
+        }
+        .text{
+            border: none;
+            border-top-right-radius:10px;
+            border-bottom-right-radius:10px;
+            padding: 5px 15px 5px 15px;
+
+        }
+        @media only screen and (max-width: 1000px) {
+            #background{
+                padding: 10px 0 10px 0;
+            }
+            .text{
+                border: none;
+                border-top-right-radius:10px;
+                border-bottom-right-radius:10px;
+                padding: 5px 20px 5px 20px;
+
+            }
+            .input-group {
+                margin-left: 200px;
+                margin-top: 20px;
+
+            }
+            img{
+                text-align: center;
+            }
+
+
+
+        }
+        @media only screen and (max-width: 500px) {
+            .text{
+                border: none;
+                border-top-right-radius:10px;
+                border-bottom-right-radius:10px;
+                padding: 5px 20px 5px 20px;
+
+            }
+            #background{
+                padding: 10px 0 10px 0;
+            }
+
+            .input-group {
+                margin-left: 100px;
+                margin-top: 20px;
+
+            }
+            img{
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div class="container">
+    <div class="col-md-4 "></div>
+    <div class="col-md-4" id="background">
+        <div align="center" class=" img">
+            <img class="img-responsive img-circle text-center " width="100px" height="100px;" src="everything/log%20in%20img.png">
+        </div>
+            <div class="input-group">
+
+            <span>
+                <i class="fa fa-user"></i>
+            </span>
+                <input  class="text" id="name" type="text" placeholder="Write your Name">
+
+            </div>
+
+            <div class="input-group ">
+                <span>
+                <i class="fa fa-lock"></i>
+                </span>
+                <input class="text" id="password"  type="password" placeholder="Write your Name">
+
+            </div>
+            <div class="input-group ">
+
+                <button id="btn" class="btn btn-primary">Log In</button>
+
+            </div>
+
+    </div>
+
+    <div class="col-md-4"></div>
+</div>
+</body>
+</html>
+
+
+<script>
+    $(document).ready(function () {
+        $("#btn").click(function () {
+            var user = "Shahir";
+            var pass = 1;
+            var name = $("#name").val();
+            var password = $("#password").val();
+
+            if (name==user && password==pass) (
+                window.location.href="home.html"
+            )
+            else (
+                alert("register your self")
+            )
+        });
+    });
+</script>
